@@ -86,7 +86,7 @@ void connectToAP::connect() {
   server.begin();
 }
 
-void connectToAP:: rstEEPROM(){
+void connectToAP::rstEEPROM(){
   for(int i=0; i<512; i++){
     EEPROM.write(i,0);
   }
